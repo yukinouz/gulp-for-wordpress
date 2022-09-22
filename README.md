@@ -16,6 +16,7 @@ WordPressのローカル環境構築は、Localを前提としています。
 1. CONTINUE
 1. WordPress Username, WordPress Passwordを入力（何でもOK）
 1. ADD SITE
+1. このリポジトリをテーマとして配置します。
 
 ## Build Setup
 
