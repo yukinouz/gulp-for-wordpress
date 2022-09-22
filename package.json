@@ -7,12 +7,17 @@
     "build": "NODE_ENV=production npx gulp build --production"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/yukinouz/gulp-for-wordpress"
   },
   "keywords": [],
   "author": "yukinouz",
   "license": "UNLICENSED",
   "private": true,
+  "bugs": {
+    "url": "https://github.com/yukinouz/gulp-for-wordpress/issues"
+  },
+  "homepage": "https://github.com/yukinouz/gulp-for-wordpress#readme",
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
