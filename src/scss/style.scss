@@ -1,43 +1,48 @@
 @charset "utf-8";
 
+body {
+  font-family: "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", meiryo, sans-serif;
+}
+
 img {
   height: auto;
   max-width: 100%;
   vertical-align: top;
 }
 
-$red: #f00;
-
-.hoge {
-  color: $red;
+.inner {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.alphabetical {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header__title {
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.prefix {
-  transform: translateY(-50%);
+.wp-sample {
+  padding: 40px 0;
 }
 
-.grid {
-  display: grid;
-  grid-template-rows: 100px 50px;
-  grid-template-columns: 150px 1fr;
+.wp-sample__title {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.media-query-sample01 {
-  font-size: 14px;
-  @media only screen and (min-width: 768px) {
-    font-size: 18px;
-  }
+.wp-sample__box {
+  border: 1px solid #000;
+  padding: 30px 20px;
 }
 
-.media-query-sample02 {
-  color: blue;
-  @media only screen and (min-width: 768px) {
-    color: green;
-  }
+.wp-sample__img {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.wp-sample__button,
+.wp-sample__img {
+  margin-top: 40px;
 }
