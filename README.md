@@ -30,6 +30,10 @@ $ npm run dev
 $ npm run build
 ```
 
+## tinypngについて
+tinypngはAPIの登録が必要です。
+API登録をして、gulpfileの`"YOUR API KEY"`を任意の値に変更してください。
+
 ## .gitignoreについて
 distフォルダはgitignoreに入っています。
 初回は、`npm run build`を実行して、distフォルダを作成するようにしてください。
