@@ -97,7 +97,6 @@ const generateWebp = (done) => {
 
 const cacheBusting = (done) => {
   src("./**/**.php")
-    .pipe(replace(/\.(js|css)\?ver/g, ".$1?ver=" + hash))
     .pipe(replace(/\.(webp|jpg|jpeg|png|svg|gif)/g, ".$1?ver=" + hash))
     .pipe(dest("./"));
   done();
