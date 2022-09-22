@@ -53,7 +53,7 @@ const buildServer = (done) => {
     port: 8080,
     files: ["**/*"],
     // 下記をLocalのURLに変更
-    // proxy: "http://gulpforwordpress.local/",
+    proxy: "http://gulpforwordpress.local/",
     open: true,
     watchOptions: {
       debounceDelay: 1000,
@@ -96,10 +96,10 @@ const generateWebp = (done) => {
 };
 
 const cacheBusting = (done) => {
-  src("./dist/index.html")
+  src("./**/**.php")
     .pipe(replace(/\.(js|css)\?ver/g, ".$1?ver=" + hash))
     .pipe(replace(/\.(webp|jpg|jpeg|png|svg|gif)/g, ".$1?ver=" + hash))
-    .pipe(dest("./dist"));
+    .pipe(dest("./"));
   done();
 };
 
